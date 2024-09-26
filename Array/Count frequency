@@ -39,3 +39,52 @@ public class Main
      
 	}
 }
+---------------------------------******************---------------------------
+//  Using HashMap
+// Time Complexity: O(N)
+// Space Complexity: O(n)
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class Main
+{
+    
+    
+    public static void frequencyCount(int arr[],int n){
+        
+        Map<Integer,Integer> mymap = new HashMap<>();
+        
+        for(int i=0;i< n;i++){
+            
+            if(mymap.containsKey(arr[i]))
+            {
+                
+                mymap.put(arr[i], mymap.get(arr[i])+1);
+                
+            }
+            else
+            {
+                mymap.put(arr[i],1);
+            }
+        }
+        
+        
+        for(Map.Entry<Integer,Integer> myprint : mymap.entrySet())
+        {
+            System.out.println(myprint.getKey() + " " + myprint.getValue());
+        
+        
+        }
+    }
+    
+	  public static void main(String[] args) {
+	    
+	    int arr[] = {1,2,3,2,2,1,3,3,5};
+	    int n = arr.length;
+	    frequencyCount(arr,n);
+
+
+	}
+
+}
