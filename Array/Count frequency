@@ -1,5 +1,9 @@
 // Count frequency of each element in an array
-import java.util.Arrays;
+
+// 1) Use of two loops
+
+// Time Complexity: O(n log n) (due to sorting)
+// Space Complexity: O(n) (for the input array)import java.util.Arrays;
 
 public class Main
 {
