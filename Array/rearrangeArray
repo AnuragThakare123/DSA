@@ -1,4 +1,7 @@
 //Rearrange array in increasing-decreasing order
+// Time Complexity: O(nlogn) +O(n), O(nlogn) for sorting the array and O(n) for printing the elements. 
+
+
 
 import java.util.Arrays; 
 public class Main
