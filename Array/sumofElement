@@ -1,0 +1,43 @@
+// Calculate Sum of the Elements of the Array
+
+//Time Complexity: O(n) As we traverse the array once.
+
+// Space Complexity: O(1).
+
+
+import java.util.Arrays; 
+public class Main
+{
+    
+    public static void print(int arr[],int n){
+        
+        for(int i=0; i<=n; i++){
+            
+            System.out.print(arr[i]+" ");
+        }
+        System.out.println();
+    }
+
+    
+	public static void main(String[] args) {
+	//	int arr[]= {1,2,3,4,5};
+		int arr[]= {1,2,1,1,5,1};
+
+		int n =  arr.length-1;
+
+	    print(arr,n);
+	    
+	    
+	    int sum=0;
+	    
+	    for(int i =0; i<=n; i++){
+	        
+	        sum = sum + arr[i];
+	       
+	    }
+	    
+	    System.out.print(sum);
+	    
+	   
+	}
+}
