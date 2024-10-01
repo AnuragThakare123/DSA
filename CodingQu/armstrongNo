@@ -1,1 +1,52 @@
+class Solution {
+    static String armstrongNumber(int n) {
+        
 
+        int temp = n;
+        int sum = 0;
+        
+     
+        while(n != 0){
+            
+           int  n1 = n % 10;
+            sum = sum + n1*n1*n1;
+            n = n /10;
+        }
+        
+        if(sum == temp){
+            return "true";
+            
+        }else{
+            return "false";
+            
+        }
+        // return sum == temp;
+        // code here
+    }
+    
+    
+    
+	public static void main(String[] args) {
+	    
+	   Scanner sc = new Scanner(System.in);
+	   System.out.print("Enter a  number:");
+	   
+	   int n = sc.nextInt();
+	   String result = armstrongNumber(n);
+
+	   // int n = 153;
+	   
+	   if(result.equals("true")){
+	       
+	       System.out.println(n + "yes it is!");
+	   }else{
+            
+            System.out.println(n + "No it is not!");
+
+	   }
+	   // System.out.print(armstrong(n));
+	           sc.close();
+
+	}
+}
+--------------------------*******************---------------------------------
