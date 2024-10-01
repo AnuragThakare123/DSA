@@ -48,6 +48,8 @@ class Solution {
 }
 --------------------------*******************---------------------------------
 // Easy version
+//time complexity -O(logn)
+// Space complexity = O(n)
 
 public class Main
 {
