@@ -50,3 +50,47 @@ public class Main
 
 	}
 }
+--------------------******************-----------------------
+// Palindrome of Sum 
+
+public class Main
+{
+	public static void main(String[] args) {
+
+      int n = 56;
+      int remainder;
+      int reverse =0;
+      int sum = 0;
+      
+      while(n > 0){
+          // to find sum
+         int last = n%10;
+          sum = sum+last;
+          n = n/10;
+      }
+      int temp = sum;
+      System.out.println(temp);
+
+      
+      
+      while(sum > 0){
+          // to reverse the sum
+          remainder = sum%10;
+          reverse = reverse*10 + remainder;
+          sum = sum/10;
+      }
+      System.out.println(reverse);
+
+      
+      
+      if(temp == reverse){
+         
+          System.out.println("It is palindrome");
+      }
+      else{
+          System.out.println("It is not ");
+      }
+      
+
+	}
+}
