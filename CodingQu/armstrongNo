@@ -59,9 +59,9 @@ public class Main
 		
 		while( n>0){
 		    
-		    int last = n%10;
+		    int last = n%10; // digit mil raha hai yeh step seh 
 		    sum = sum + last*last*last;
-		    n = n/10;
+		    n = n/10; // digit chota hoo raha hai isse
 		
 		}
 		System.out.println(sum);
