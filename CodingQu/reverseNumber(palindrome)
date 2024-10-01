@@ -1,0 +1,52 @@
+// Time complexity = O(logn)
+// Space = O(n)
+
+
+public class Main
+{
+	public static void main(String[] args) {
+
+      int n = 153;
+      int remainder;
+      int reverse =0;
+      
+      while(n > 0){
+          
+          remainder = n%10;
+          reverse = reverse * 10 + remainder;
+          n = n/10;
+      }
+      System.out.print(reverse);
+
+	}
+}
+--------------------------***************------------------------
+// Palindrome or Not
+
+public class Main
+{
+	public static void main(String[] args) {
+
+      int n = 121;
+      int remainder;
+      int reverse =0;
+      int temp = n;
+      
+      while(n > 0){
+          
+          remainder = n%10;
+          reverse = reverse * 10 + remainder;
+          n = n/10;
+      }
+      System.out.println(reverse);
+      
+      if(temp == reverse){
+          System.out.println("It is palindrome");
+      }
+      else{
+          System.out.println("It is not ");
+      }
+      
+
+	}
+}
