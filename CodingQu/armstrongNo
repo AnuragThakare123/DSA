@@ -51,10 +51,17 @@ class Solution {
 //time complexity -O(logn)
 // Space complexity = O(n)
 
+//import java.util.Scanner;
+
+
 public class Main
 {
 	public static void main(String[] args) {
 		
+		//System.out.println("Enter your No:");
+		//Scanner sc = new Scanner (System.in);
+    		//int n = sc.nextInt();
+
 		int n = 153;
 		int temp = n;
 		int sum =0;
