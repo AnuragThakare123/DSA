@@ -1,1 +1,22 @@
+// Time complexity = O(logn)
+// Space = O(n)
 
+
+public class Main
+{
+	public static void main(String[] args) {
+
+      int n = 153;
+      int remainder;
+      int reverse =0;
+      
+      while(n > 0){
+          
+          remainder = n%10;
+          reverse = reverse * 10 + remainder;
+          n = n/10;
+      }
+      System.out.print(reverse);
+
+	}
+}
