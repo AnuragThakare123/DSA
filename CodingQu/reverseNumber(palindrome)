@@ -52,6 +52,7 @@ public class Main
 }
 --------------------******************-----------------------
 // Palindrome of Sum 
+// time complexity = O(logn)
 
 public class Main
 {
@@ -63,7 +64,7 @@ public class Main
       int sum = 0;
       
       while(n > 0){
-          // to find sum
+          // to calculate sum
          int last = n%10;
           sum = sum+last;
           n = n/10;
