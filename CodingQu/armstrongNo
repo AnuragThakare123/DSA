@@ -1,11 +1,9 @@
 class Solution {
     static String armstrongNumber(int n) {
-        
 
         int temp = n;
         int sum = 0;
-        
-     
+
         while(n != 0){
             
            int  n1 = n % 10;
@@ -23,7 +21,6 @@ class Solution {
         // return sum == temp;
         // code here
     }
-    
     
     
 	public static void main(String[] args) {
@@ -50,3 +47,43 @@ class Solution {
 	}
 }
 --------------------------*******************---------------------------------
+// Easy version
+
+public class Main
+{
+	public static void main(String[] args) {
+		
+		int n = 153;
+		int temp = n;
+		int sum =0;
+		
+		while( n>0){
+		    
+		    int last = n%10;
+		    sum = sum + last*last*last;
+		    n = n/10;
+		
+		}
+		System.out.println(sum);
+		
+		if(sum == temp){
+		    
+		    System.out.print("True");
+		}
+		else{
+		  
+		    System.out.print("False");
+
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
