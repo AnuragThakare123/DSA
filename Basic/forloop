@@ -70,3 +70,12 @@ So, Sum is Odd
 i=2,j=2
  i & j ka Sum is :4
  So, Sum is Even
+--------------------******************--------------------
+// you can customise the increment step to achieve specific patterns or iterate a certain number of times.
+public class Main {
+    public static void main(String[] args) {
+        for (int i = 1; i <= 25; i += 5) {
+            System.out.println("i = " + i);
+        }
+    }
+}
