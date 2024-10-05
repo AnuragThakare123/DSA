@@ -1,1 +1,8 @@
+// Pass by Value:
 
+In Java, when you pass primitive data types (like int, char, etc.) to a function, the function receives a copy of the original value. Any changes made to the 
+parameter inside the function do not affect the original value.
+Pass by Reference (simulated in Java):
+
+// Java does not have true pass by reference, but you can simulate it by passing objects. When you pass an object to a function, the function
+receives a reference to the original object, so changes made to the object inside the function will affect the original object.
