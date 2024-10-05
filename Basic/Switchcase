@@ -1,6 +1,6 @@
 // Limited to Integer or Character Types
 
-
+1) 
 import java.util.*;
 
 public class Main{
@@ -32,3 +32,38 @@ public class Main{
         }   
     }
 -------------------------******************----------------------------------
+
+### Note : sc.nextChar(): The Scanner class does not have a method called nextChar(). To read a character input, you can use sc.next().charAt(0). This reads the first character of the string input.
+
+2) 
+import java.util.*;
+
+public class Main{
+    
+    
+    public static void main(String args[]){
+        
+        Scanner sc = new Scanner(System.in);
+        
+         System.out.println("Enter your Number:");
+
+        char Grade = sc.next().charAt(0);
+    
+        
+        switch(Grade){
+            
+            case 'A':
+                System.out.print("Excellent Buddy...!");
+                break;
+                
+            case 'B':
+                System.out.print("Bhai Thoda Hardwork Kar....!");
+                break;
+                
+            default:
+                System.out.print("Bhai,Tu Fail Hogaya!");
+        }
+            
+        }
+       
+    }
