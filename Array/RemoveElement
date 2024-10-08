@@ -38,3 +38,54 @@ public class Main{
 
  }
 }
+------------------------************------------------
+// same code but i modified here to handle duplicate numbers
+
+
+public class Main{
+    
+    
+   public static void print(int arr[],int n){
+       
+       for(int i=0; i< n; i++){
+           System.out.print(arr[i]+" ");
+       }
+   }
+ 
+    public static void main(String args[]){
+        
+        //int arr[] = {1,2,3,4,5,6,7};
+        int arr[] = {3,2,3,4,5,6,7};
+      
+        int key = 3;
+        int n = arr.length;
+        int newarr[]= new int[n]; // here no need to initialize from n-1,
+
+        int j = 0;
+
+      for(int i =0; i< n; i++){
+          
+          if(arr[i] != key){
+              
+              newarr[j] = arr[i];
+              j++;
+                     
+          }
+        }
+        
+        print(newarr,j);   // Print the new array only up to the number of valid elements, which is 'j'
+                          //  j is the count of valid elements
+ }
+}
+
+
+
+
+
+
+
+
+
+
+
+
