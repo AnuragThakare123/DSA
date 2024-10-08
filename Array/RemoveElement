@@ -40,7 +40,7 @@ public class Main{
 }
 ------------------------************------------------
 // same code but i modified here to handle duplicate numbers
-
+// now this code can handle even  duplicate numbers
 
 public class Main{
     
@@ -77,6 +77,9 @@ public class Main{
                           //  j is the count of valid elements
  }
 }
+-----------------------************------------------
+
+
 
 
 
