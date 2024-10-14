@@ -515,19 +515,16 @@ public class Main{
             
            for(int j =1;  j <= n-i ; j++){
                
-
                System.out.print( " "+" ");
            }
            
             for(char ch  ='A';  ch <= 'A'+ i-1; ch++){
                
-
                System.out.print( ch +" ");
            }
            
            for(char ch  =(char)('A'+i-2);  ch >= 'A'; ch--){
                
-
                System.out.print( ch +" ");
            }
            
@@ -540,7 +537,29 @@ public class Main{
   A B C B A 
 A B C D C B A
 ------------*******--------------
+public class Main{
+    
+    public static void main(String args[]){
+        
+       int n=5;
+        for(int i =1; i<=n;i++){
+            
+           for(int j=i; j>=1; j--){
+               
+               System.out.print( (char)('A'+ n-j) +" ");
+           }
+           
+           System.out.println();
+        }
+    }
+}
 
+E 
+D E 
+C D E 
+B C D E 
+A B C D E 
+---------------******---------------
 
 
 
