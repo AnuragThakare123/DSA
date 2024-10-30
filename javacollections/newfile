@@ -13,3 +13,62 @@ public class Main{
         System.out.println(list);
     }
 }
+----------------***-----------
+
+// same hi hai but we use here List 
+import java.util.*;
+import java.util.List;
+public class Main{
+    
+    public static void main(String args[]){
+
+        // ArrayList<Integer>list= new ArrayList();
+        List<Integer> list = new ArrayList();
+        list.add(1);
+        list.add(2);
+        list.add(3);
+        System.out.println(list);
+    }
+}
+
+---------------***------------------
+import java.util.*;
+import java.util.List;
+
+public class Main{
+    
+    public static void main(String args[]){
+       
+        List<Integer> list = new ArrayList<>();
+        list.add(1);
+        list.add(2);
+        list.add(3);
+        //System.out.println(list);
+       
+       // to add element in the middle
+        list.add(1,9);
+        System.out.println(list);
+        
+       // to add new list in current list
+       
+       List<Integer>list2 = new ArrayList<>();
+       list2.add(7);
+       list2.add(8);
+       list2.add(9);
+       System.out.println(list2);
+       
+       list.addAll(list2);
+       System.out.println(list);
+       
+       // to get element at any position using Get method
+       System.out.println(list.get(4));
+
+    }
+}
+-----------***------------------
+
+
+
+
+
+
