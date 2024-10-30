@@ -66,7 +66,40 @@ public class Main{
     }
 }
 -----------***------------------
+import java.util.*;
+import java.util.List;
 
+
+
+public class Main{
+    
+    public static void main(String args[]){
+       
+        List<Integer> list = new ArrayList<>();
+        list.add(1);
+        list.add(2);
+        list.add(3);
+        list.add(4);
+        list.add(5);
+
+        
+       System.out.println(list);
+       
+       // to remove element from perticular index
+       list.remove(2);
+       System.out.println(list);
+       
+       // or 
+      list.remove(Integer.valueOf(5));
+      System.out.println(list);
+      
+      // to clear full list
+      list.clear();
+      System.out.println(list);
+
+    }
+}
+----------------***--------------
 
 
 
