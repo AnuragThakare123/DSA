@@ -25,6 +25,8 @@ public class Main{
        animals.pop();
        System.out.println(animals);
 
+       System.out.println(animals.peek());
+
     }
 }
 ------------------*****-----------------
