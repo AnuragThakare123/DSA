@@ -1,1 +1,32 @@
+// Stack follows LIFO = Last In Last Out
+
+import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
+
+public class Main{
+    
+    public static void main(String args[]){
+        
+       Stack<String> animals = new Stack<>();
+       
+       animals.push("Lion");
+       animals.push("Tiger");
+       animals.push("Leopard");
+       animals.push("Cheetah");
+       animals.push("Cat");
+
+       
+       System.out.println("Stack is:"+ animals);
+       
+       // to see which element is at Peak
+       System.out.println(animals.peek());
+       
+       animals.pop();
+       System.out.println(animals);
+
+    }
+}
+------------------*****-----------------
+
 
