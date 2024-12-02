@@ -1,1 +1,26 @@
 
+public class Main
+{
+	public static void main(String[] args) {
+
+    //int N = 1234;
+    int N = 10400;
+    int rev = 0;
+
+    int ori = N;
+    int d = 0;
+   
+    while(N>0){
+        d = N % 10;
+        
+        rev = (rev*10) + d;
+
+        N = N/10;
+            
+    }
+    
+    System.out.print(rev);
+
+
+	}
+}
