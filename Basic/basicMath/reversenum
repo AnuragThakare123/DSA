@@ -10,7 +10,7 @@ public class Main
     int ori = N;
     int d = 0;
    
-    while(N>0){
+    while(N > 0){ // yeh condition is only true for postive number
         d = N % 10;
         
         rev = (rev*10) + d;
@@ -22,17 +22,19 @@ public class Main
     System.out.print(rev);
 ---------------------------------------
 OR
- public int reverse(int x) {
+// n = 123
+// n = -345
+ public int reverse(int n) {
 
         int rev =0;
 
-        while(x !=0){ // changes iss condition mai kiya hai
+        while(n !=0){ // This can handle both negative and positive num.
         
-        int d = x % 10;
+        int d = n % 10;
 
         rev = (rev*10)+ d;
 
-        x = x/10;
+        n = n/10;
         }
 
         return rev;
