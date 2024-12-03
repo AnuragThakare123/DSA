@@ -1,4 +1,4 @@
-// Basic Method
+// Basic Method (Optimal)
 
 public class Main
 {
@@ -24,3 +24,48 @@ public class Main
 	}
 }
 -----------------------------------------------------------
+time complexity - O(log10N + 1)
+-----------------------------------------------------------
+// palindrome of negative num is always false i,e 121-, which is not the same as -121
+
+class Solution {
+    public boolean isPalindrome(int num) {
+
+        if(num < 0){
+            return false;
+        }
+        else{
+        int ori = num;
+        int newnum =0;
+
+        while(num !=0){
+           int ld = num % 10;
+           newnum =newnum*10+ld;
+           num =num/10;
+        }
+        if(ori == newnum){
+         return true;
+        }
+        else{
+         return false;
+        }
+ 
+     }
+
+    }
+}
+--------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
