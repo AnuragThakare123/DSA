@@ -1,0 +1,28 @@
+## Optimal Approach
+public class Main
+{
+	public static void main(String[] args) {
+	    
+	    int N = 153;
+	    int sum = 0;
+	    int ori = N;
+	    int k = String.valueOf(N).length();
+	    
+	    while(N !=0 ){
+	        
+	      int ld = N % 10;
+	      int mul = (int) Math.pow(ld,k);
+	      sum = sum + mul ;
+	      N = N/10;
+	        
+	    }
+	    
+	    if( sum == ori){
+	        System.out.println("Armstrong Num.");
+	    }
+	    else{
+	        System.out.println("Not an Armstrong Num.");
+	    }
+
+	}
+}
