@@ -26,3 +26,37 @@ public class Main
 
 	}
 }
+---------------------------------------------
+
+import java.util.Scanner;
+
+public class Main {
+	
+	public static void main(String[] args) {
+		// Write your code here
+
+    Scanner scanner = new Scanner(System.in); 
+    int n = scanner.nextInt();
+	
+	int sum = 0;
+	int ori = n;
+	int k = String.valueOf(n).length();
+
+
+	while(n!=0){
+		int ld =n%10;
+		int mul = (int)Math.pow(ld,k);
+		sum = sum + mul;
+		n = n/10;
+	}
+
+	if(ori == sum){
+		System.out.println(true);
+	}
+	else{
+		System.out.println(false);
+	}
+
+	}
+}
+
