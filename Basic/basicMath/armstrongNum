@@ -27,6 +27,7 @@ public class Main
 	}
 }
 ---------------------------------------------
+// this is when compiler check test cases directly, in this we just have to take input using scanner class
 
 import java.util.Scanner;
 
