@@ -1,4 +1,4 @@
-
+// Brute force method ( O(N))
 import java.util.ArrayList;
 public class Main
 {
@@ -6,6 +6,7 @@ public class Main
 	
 	int n = 36;
 	ArrayList<Integer> numbers = new ArrayList<>();
+// or using array int[] divisors = new int[n];
 	
 	
 	for(int i=1; i<= n;i++){
@@ -21,3 +22,52 @@ public class Main
 		System.out.println(numbers);
 	}
 }
+-------------------------------------------------------------
+// Optimal apporach
+
+
+import java.util.ArrayList;
+public class Main
+{
+	public static void main(String[] args) {
+	
+	int n = 36;
+	ArrayList<Integer> numbers = new ArrayList<>();
+	
+	int sqrtN = (int)Math.sqrt(n);
+	
+	
+	for(int i=1; i<= sqrtN ;i++){
+	    
+	    if(n%i==0){
+	        
+	        numbers.add(i);
+	        
+	    }
+	    
+	    if(i != n/i){
+	        
+	     numbers.add(n/i);
+
+	        
+	    }
+	    
+	}
+
+		System.out.println(numbers);
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
