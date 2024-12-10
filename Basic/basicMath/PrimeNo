@@ -1,4 +1,9 @@
 // Brute force
+//Time Complexity: O(N) where N is the input number as we iterate from 1 to N performing constant-time operation for each iteration.
+//Space Complexity : O(1) as the space used by the algorithm does not increase with the size of the input.
+
+
+
 
 import java.util.ArrayList;
 public class Main
@@ -29,6 +34,8 @@ public class Main
 	}
 }
 -----------------------------------------------------
+
+
 
 
 
