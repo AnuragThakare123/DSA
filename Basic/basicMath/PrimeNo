@@ -1,5 +1,5 @@
-// prime no =  The which are divivded by itself and 1
-// but 1 is not prime no.
+// prime no =  The number which are divided by itself and 1
+// but 1 is not prime no. nor composite no.
 
 // Brute force
 //Time Complexity: O(N) where N is the input number as we iterate from 1 to N performing constant-time operation for each iteration.
