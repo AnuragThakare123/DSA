@@ -1,3 +1,79 @@
 Gcd- greaest common factor
 hcf -highest common factor
 // any two given numbers always have gcd = 1;
+
+// brute force
+// time complexity - O(min(N1, N2)) 
+
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+
+    int n1 = 20;
+    int n2 = 15;
+    int gcd = 1;
+    
+    
+    for(int i = 1; i<= Math.min(n1,n2); i++){
+        
+        if( n1 % i == 0 && n2 % i == 0){
+            gcd = i;
+        }
+    }
+    System.out.println(gcd);
+	}
+}
+------------------------------------------------------
+// better approach
+// in this method we are iterating loop backwords, it decrease the time complexity
+// but time comlexity remains same-O(min(N1, N2))
+// Space Complexity: O(1) as the space complexity remains constant and independent of the input size. Only a fixed amount of memory is required to store the integer variables.
+
+
+
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+
+    int n1 = 20;
+    int n2 = 15;
+    int gcd = 1;
+    
+    
+    for(int i = Math.min(n1,n2); i>1 ; i--){
+        
+        if( n1 % i == 0 && n2 % i == 0){
+            gcd = i;
+        }
+    }
+    System.out.println(gcd);
+
+
+	}
+}
+---------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
