@@ -97,7 +97,7 @@ public class Main
 }
 
 
-2) by division ( most optimal)
+2) by remainder ( most optimal)
 // T.c. = O(log(min(n1,n2)))
 
 import java.util.*;
